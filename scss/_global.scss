@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1f1e1e;
+}
+h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  color: #1f1e1e;
+}
+.container {
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.gold-btn {
+  padding: 12px 30px;
+  border-radius: 22px;
+  background-color: #886239;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  display: inline-block;
+  position: relative;
+  &::before {
+    content: "Заказ туров и бронирование:";
+    position: absolute;
+    left: -245px;
+  }
+}
+.big-btn {
+  padding: 20px 55px;
+  border-radius: 30px;
+  background-color: #886239;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: inline-block;
+}
