@@ -1,3 +1,4 @@
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -11,6 +12,11 @@ h1 {
   font-size: 90px;
   line-height: 130%;
   color: #1f1e1e;
+}
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
 }
 .container {
   max-width: 1150px;
@@ -42,4 +48,14 @@ h1 {
   font-size: 18px;
   line-height: 21px;
   display: inline-block;
+}
+.arrow-btn {
+  display: block;
+  width: 40px;
+  margin: 10px auto 0;
+}
+
+.strime iframe{
+  display: block;
+  margin: 0 auto;
 }
