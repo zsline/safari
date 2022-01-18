@@ -81,6 +81,7 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .arrow-btn {
@@ -92,6 +93,18 @@ h2 {
 .strime iframe {
   display: block;
   margin: 0 auto;
+}
+
+.application-checkbox:checked + span::before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #c4c4c4;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .header {
@@ -462,5 +475,157 @@ h2 {
   line-height: 130%;
   text-align: center;
   color: #1f1e1e;
+}
+
+.footer {
+  background-color: #1f1e1e;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.footer img {
+  display: block;
+  margin: 0 auto 80px;
+}
+
+.footer__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 120px;
+  padding: 0 100px;
+}
+
+.footer__title {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.application {
+  background-color: #EAEAEA;
+  padding: 75px 0;
+}
+
+.application__title {
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+.application form {
+  max-width: 832px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.application form input {
+  max-width: 256px;
+  max-height: 44px;
+  border: 1px solid #c4c4c4;
+  padding: 11px 14px 12px;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.application form input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form input::placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form textarea {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  padding: 11px 14px 12px;
+  margin-bottom: 28px;
+  font-size: 18px;
+  resize: none;
+  margin-bottom: 67px;
+}
+
+.application form textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form textarea:-ms-input-placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form textarea::-ms-input-placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form textarea::placeholder {
+  font-size: 16px;
+  color: #c4c4c4;
+  font-family: "Roboto", sans-serif;
+}
+
+.application form button {
+  border: none;
+}
+
+.application form label {
+  font-size: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  padding-left: 46px;
+  position: relative;
+}
+
+.application form label input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.application form label span {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #c4c4c4;
+  border-radius: 2px;
+  position: absolute;
+  margin-left: -45px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -48,6 +48,7 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   display: inline-block;
+  cursor: pointer;
 }
 .arrow-btn {
   display: block;
@@ -58,4 +59,14 @@ h2 {
 .strime iframe{
   display: block;
   margin: 0 auto;
+}
+.application-checkbox:checked + span::before{
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #c4c4c4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
