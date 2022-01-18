@@ -84,6 +84,10 @@ h2 {
   cursor: pointer;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .arrow-btn {
   display: block;
   width: 40px;
@@ -627,5 +631,25 @@ h2 {
   border-radius: 2px;
   position: absolute;
   margin-left: -45px;
+}
+
+@media (max-width: 800px) {
+  .gold-btn::before {
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .header__title {
+    font-size: 50px;
+    margin: 50px 0 400px 0px;
+    text-align: center;
+  }
+  .menu-btn {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
